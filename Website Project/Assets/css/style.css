@@ -66,8 +66,9 @@
   margin-left: 3vw;
 }
 body{
-  max-width: 1320px;
+  background: var(--primary-color);
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .text-right{
   text-align: right;
@@ -81,17 +82,20 @@ header{
   background-color: #fb9300;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
 }
 nav ul{
   display: flex;
   list-style: none;
+  justify-content: flex-end;
+  padding-left: 20px;
 }
 
 nav ul li{
-  padding: 33px 18px 33px 0px;
+  padding: 33px 0px;
 }
-
+.group-icon>nav>nav{
+  padding: 0;
+}
 .logo{
   height: 28px;
 }
@@ -102,18 +106,23 @@ nav ul li{
   font-size: 18px;
   padding: 33px 18px;
   text-align: right;
+  margin: 0 5px;
 }
 .icon{
   font-size: 20px;
   color: white;
   font-family: var(--description-font);
- 
+  margin: 0 5px;
+}
+.icon:hover{
+  color: var(--black-color);
 }
 .group-icon{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  position: relative;
+  /* right: -4vw; */
 }
 .btn{
   padding: 11px 23px;
@@ -126,6 +135,10 @@ nav ul li{
   font-weight: bold;
   box-shadow: 3px 3px  var(--black-color);
   text-decoration: none;
+}
+.btn:hover{
+  background: var(--white-color);
+  color: var(--primary-color);
 }
 .col6 ul li:first-child{
   text-decoration: underline;
@@ -146,8 +159,8 @@ h1{
 }
 .main-img{
   margin-top: -40px;
-  width: 25vw;
-  
+  width: 35vw;
+  margin-left: -40px;
 }
 .heading-font{
   padding: 50px 0px 0px 0px;
@@ -157,10 +170,55 @@ h1{
   font-size: 20px;
   font-weight: 1000;
   color: white;
-  padding-left: 40px;
+  padding-left: 20px;
   margin-top: 70px;
 }
 .slider{
   width: 80px;
   margin: 70px 0px 0px 10px;
+  transition: all .5s;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+header, main{
+  margin: 0 auto;
+  max-width: 1320px;
+}
+.sliderContent{
+  margin-left: 130px;
+  position: relative;
+}
+.sliderContent::before{
+  position: absolute;
+  top: -150px;
+  right: 0;
+  content: url('../image/slider-decore-1\ -\ Copy.png');
+}
+.mainBanner{
+  position: relative;
+}
+.before{
+  position: absolute;
+  bottom: 100px;
+  left: -70px;
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
+  text-wrap: nowrap;
+  overflow: hidden;
+  background: var(--green-color);
+  color: var(--yellow-color);
+  transform: rotate(-7deg);
+}
+.after{
+  position: absolute;
+  bottom: 100px;
+  left: -70px;
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
+  text-wrap: nowrap;
+  overflow: hidden;
+  background: var(--green-color);
+  color: var(--yellow-color);
+  transform: rotate(7deg);
 }
