@@ -76,6 +76,18 @@ body{
 .text-center{
   text-align: center;
 }
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.space-evenly{
+  justify-content: space-evenly;
+}
+.align-center{
+  align-items: center;
+}
 header{
   display: flex;
   flex-direction: row;
@@ -145,10 +157,11 @@ nav ul li{
   color : white;
 }
 .container{
-  background-color: #fb9300;
   max-width: 1320px;
   max-height: auto;
 }
+
+
 
 h1{
   font-family: var(--heading-font);
@@ -162,7 +175,7 @@ h1{
   width: 35vw;
   margin-left: -40px;
 }
-.heading-font{
+.banner-heading{
   padding: 50px 0px 0px 0px;
 }
 .text-1{
@@ -222,3 +235,69 @@ header, main{
   color: var(--yellow-color);
   transform: rotate(7deg);
 }
+.heading{
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
+  color: black;
+  margin: 0px 91px;
+}
+.catagories-section{
+  background-color: #ffffff;
+  
+
+}
+.categories-btn{
+  padding:1.25rem 2.25rem 1.25rem 2.5rem;
+  font-family: var(--heading-font);
+  border: black;
+  border-radius: 12px;
+  font-size: 16px;
+  color:var(--black-color);
+  font-weight: 500;
+  border-width: 1px 3px 3px 1px;
+  box-shadow: 3px 3px  var(--black-color);
+  text-decoration: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--black-color);
+  letter-spacing: 1px;
+  display: flex;
+  gap: 10px;
+  width: 154.52px;
+  align-items: center;
+}
+.categories-btn:hover{
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+.arrow{
+  height: 20px;
+  width: 20px;
+  color: rgb(255, 235, 59);
+  
+}
+.category1{
+  height: 340.25px;
+  width: 340.25px;
+  background-color: #3f9065;
+  border-radius: 50%;
+  padding: 40px;
+  margin: 0px 23.203px;
+}
+.category2{
+  height: 409.86px;
+  width: 409.86px;
+  background-color: #ffeb3b;
+  border-radius: 50%;
+  padding: 40px;
+  margin: 0px 23.203px;
+}
+.category3{
+  height: 340.25px;
+  width: 340.25px;
+  background-color: #fb9300;
+  border-radius: 50%;
+  padding: 40px;
+  margin: 0px 23.203px;
+}
+
