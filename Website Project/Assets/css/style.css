@@ -299,7 +299,7 @@ header, main{
   font-family: var(--heading-font);
   font-size: var(--heading-size);
   color: black;
-  margin: 0px 91px;
+  /* margin: 0px 91px; */
 }
 .catagories-section{
   background-color: #ffffff;
@@ -357,4 +357,39 @@ header, main{
   border-radius: 50%;
   padding: 40px;
   margin: 0px 23.203px;
+}
+.round-btn{
+  height: 50px;
+  width: 50px;
+  padding: 15px 15px 15px 15px;
+  background-color: transparent;
+  font-family: var(--description-font);
+  border: var(--primary-color);
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  color: #66666A;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.round-btn:hover{
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+.speciality-section{
+  background-color: #FDE1B9;
+}
+.elementor-shape-fill{
+  fill: #FDE1B9;
+  fill-opacity: 1;
+  height: 23.28px;
+  width: 1320px;
+}
+.effect{
+  color: #3f9065;
+}
+.text{
+  font-family: var(--description-font);
+  font-size: 16px;
 }
